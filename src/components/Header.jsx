@@ -8,7 +8,7 @@ import heartIcon from "../assests/heartIcon.png"
 import man from "../assests/man.png"
 import walk from "../assests/walk.png"
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
-import FloatingImages from "./FloatingImages";
+
 
 
 const Header = () => {
@@ -74,19 +74,47 @@ const Header = () => {
         <div className="mt-40">
           <div className="relative w-90 h-90 mr-20">
 
+
             <img src={circle} alt="circle" className="w-90 h-90 object-cover" />
+
+
             <img
               src={mobile}
               alt="mobile"
               className="absolute top-1/2 left-72 transform -translate-x-1/2 -translate-y-1/2 w-70 h-70 hover:opacity-80"
             />
+
+
             <div className="absolute top-1 left-1/5">
-              <FloatingImages image={heart} styling="w-28 h-28  p-2 rounded-full shadow-md hover:scale-125" />
-              <FloatingImages image={heartIcon} styling="w-28 h-28 p-2 rounded-full shadow-md  hover:scale-125"/>
-              <FloatingImages image={walk} styling="w-28 h-28  p-2 rounded-full shadow-md  hover:scale-125"/>
-              <FloatingImages image={man} styling="w-28 h-28  p-2 rounded-full shadow-md  hover:scale-125"/>
-             </div>
-            
+              
+              <img
+                src={heart}
+                alt="heart"
+                className="w-28 h-28  p-2 rounded-full shadow-md hover:scale-125"
+              />
+
+            </div>
+            <div className="absolute top-1 left-96">
+              <img
+                src={heartIcon}
+                alt="heartIcon"
+                className="w-28 h-28 p-2 rounded-full shadow-md  hover:scale-125"
+              />
+            </div>
+            <div className="absolute bottom-1/4 left-1/5">
+              <img
+                src={walk}
+                alt="walk"
+                className="w-28 h-28  p-2 rounded-full shadow-md  hover:scale-125"
+              />
+            </div>
+            <div className="absolute bottom-1/4 left-96">
+              <img
+                src={man}
+                alt="man"
+                className="w-28 h-28  p-2 rounded-full shadow-md  hover:scale-125"
+              />
+            </div>
           </div>
         </div>
       </div>
