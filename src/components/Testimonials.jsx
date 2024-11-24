@@ -65,28 +65,28 @@ export default function Testimonials() {
           image={global}
           title="Global Audience Access"
           description="Helps you gain global audience"
-          place="absolute -top-10 left-52 ml-52 floating-icon"
+          place="absolute -top-10 left-52 ml-28 floating-icon hover:scale-110"
           isInView={isInView}
         />
         <FloatingIcon
           image={personal}
           title="Personal Brand"
           description="Helps you gain global audience"
-          place="absolute -top-10 right-52 mr-52 floating-icon"
+          place="absolute -top-10 right-52 mr-28 floating-icon hover:scale-110"
           isInView={isInView}
         />
         <FloatingIcon
           image={revenue}
           title="Revenue Opportunities"
           description="Helps you gain global audience"
-          place="absolute bottom-10 left-52 ml-52 floating-icon"
+          place="absolute bottom-10 left-52 ml-28 floating-icon hover:scale-110"
           isInView={isInView}
         />
         <FloatingIcon
           image={cal}
           title="Work on Your Own Schedule"
           description="Helps you gain global audience"
-          place="absolute bottom-10 right-52 mr-52 floating-icon"
+          place="absolute bottom-10 right-52 mr-24 floating-icon hover:scale-110"
           isInView={isInView}
         />
       </div>

@@ -93,7 +93,7 @@ export const TextRevealCard = ({
             style={{
               textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
             }}
-            className="text-base sm:text-[3rem] py-10 font-semibold leading-relaxed text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300">
+            className="text-base sm:text-4xl md:text-5xl py-10 font-semibold leading-loose text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300">
             {revealText}
           </p>
         </motion.div>
@@ -109,7 +109,7 @@ export const TextRevealCard = ({
         <div
           className=" overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,white,transparent)]">
           <p
-            className="text-base leading-normal sm:text-[3rem] py-10 font-semibold bg-clip-text text-transparent bg-[#323238]">
+            className="text-base leading-loose sm:text-3xl md:text-5xl py-10 font-semibold bg-clip-text text-transparent bg-[#323238]">
             {text + `        `}
           </p>
           <MemoizedStars />

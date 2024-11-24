@@ -14,8 +14,8 @@ export default function Join() {
                 </h1>
 
                 <TextRevealCard
-                    text="FitnEarnPal is your getaway to connect with a global community of health and fitness enthusiasts, share experience and valuable knowledge, and grow their audience. As a coach you have the power to inspire, educate and motivate users worldwide by creating and sharing impactful content, workout videos, conducting live sessions and much more."
-                    revealText="FitnEarnPal is your getaway to connect with a global community of health and fitness enthusiasts, share experience and valuable knowledge, and grow their audience. As a coach you have the power to inspire, educate and motivate users worldwide by creating and sharing impactful content, workout videos, conducting live sessions and much more. "
+                    text="FitnEarnPal is your gateway to connect with a global community of health and fitness enthusiasts, share experience and valuable knowledge, and grow their audience. As a coach you have the power to inspire, educate and motivate users worldwide by creating and sharing impactful content, workout videos, conducting live sessions and much more."
+                    revealText="FitnEarnPal is your gateway to connect with a global community of health and fitness enthusiasts, share experience and valuable knowledge, and grow their audience. As a coach you have the power to inspire, educate and motivate users worldwide by creating and sharing impactful content, workout videos, conducting live sessions and much more. "
                 >
                 </TextRevealCard>
 
