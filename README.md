@@ -42,7 +42,7 @@ Make sure you have the following installed:
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/AnujKumarSingh-Code/FitnEarn-Landing-Page.git
-   cd YourRepository
+   cd FitnEarn-Landing-Page.git
    ```
 
 2. **Install Dependencies**
