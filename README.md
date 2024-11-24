@@ -2,7 +2,7 @@
 
 
 ## **About the Project**
-
+# **LINK**  -   https://fitn-earn-landing-page.vercel.app/
 This is the frontend built using the **MERN stack**  **React + Tailwind CSS + Aceternity UI** for the frontend. 
 
 ---
