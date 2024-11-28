@@ -24,7 +24,7 @@ function App() {
       <HowItWorks />
       <CoachCarousel />
       <Footer />
-      </div>
+    </div>
   
   );
 }

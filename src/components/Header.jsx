@@ -51,7 +51,7 @@ const Header = () => {
 
           <div className="ml-40 mt-10 grid grid-cols-2">
 
-            <button href="/appleStore" className="flex items-center w-52 px-5 py-2 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-lg shadow-lg hover:opacity-90">
+            <button className="flex items-center w-52 px-5 py-2 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-lg shadow-lg hover:opacity-90">
               <FaApple className="w-10 h-10 mr-2" />
               <div className="text-left">
                 <p className="text-xs">Download on the</p>
@@ -60,7 +60,7 @@ const Header = () => {
             </button>
 
 
-            <button href="/playStore" className="flex items-center w-52 px-5 py-2 w-30 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-lg shadow-lg hover:opacity-90">
+            <button className="flex items-center w-52 px-5 py-2 w-30 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-lg shadow-lg hover:opacity-90">
               <FaGooglePlay className="w-10 h-10 mr-3" />
               <div className="text-left">
                 <p className="text-xs">Get it on</p>
@@ -73,26 +73,18 @@ const Header = () => {
 
         <div className="mt-40">
           <div className="relative w-90 h-90 mr-20">
-
-
-            <img src={circle} alt="circle" className="w-90 h-90 object-cover" />
-
-
+            <img src={circle} alt="circle" className="w-90 h-90 " />
             <img
               src={mobile}
               alt="mobile"
-              className="absolute top-1/2 left-72 transform -translate-x-1/2 -translate-y-1/2 w-70 h-70 hover:opacity-80"
+              className="absolute top-1/2 left-72 transform -translate-x-1/2 -translate-y-1/2 w-70 h-70 "
             />
-
-
             <div className="absolute top-1 left-1/5">
-              
               <img
                 src={heart}
                 alt="heart"
                 className="w-28 h-28  p-2 rounded-full shadow-md hover:scale-125"
               />
-
             </div>
             <div className="absolute top-1 left-96">
               <img

@@ -1,9 +1,5 @@
 import React from "react";
-import {
-    TextRevealCard,
-    TextRevealCardDescription,
-    TextRevealCardTitle,
-} from "../ui/text-reveal-card";
+import { TextRevealCard, TextRevealCardDescription, TextRevealCardTitle } from "../ui/text-reveal-card";
 
 export default function Join() {
     return (
@@ -22,7 +18,7 @@ export default function Join() {
 
 
                 <div className="mt-16">
-                    <button href="/join" className="text-xl w-56 h-16 px-5 py-2 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-lg shadow-lg hover:opacity-80">
+                    <button  className="text-xl w-56 h-16 px-5 py-2 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-lg shadow-lg hover:opacity-80">
                         Join Now
                     </button>
                 </div>

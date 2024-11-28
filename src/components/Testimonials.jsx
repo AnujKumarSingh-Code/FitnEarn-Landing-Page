@@ -13,7 +13,7 @@ import cal from "../assests/cal.png"
 
 export default function Testimonials() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, threshold: 0.2 });
+  const isInView = useInView(ref, { once: false, threshold: 0.5 });
 
   return (
     <section
@@ -32,6 +32,7 @@ export default function Testimonials() {
         </span>{" "}
         Say
       </motion.h1>
+
       <motion.p
         className="text-center text-gray-200 mt-5 mb-10 ml-96 mr-96 text-4xl"
         initial={{ opacity: 0 }}
@@ -46,9 +47,9 @@ export default function Testimonials() {
         <motion.img
           src={circle}
           alt="circle"
-          className="w-[500px] h-[500px] object-cover rotating-circle"
+          className="w-[500px] h-[500px] object-cover "
           initial={{ scale: 0 }}
-          animate={isInView ? { scale: 1, rotate: 360 } : { scale: 0 }}
+          animate={isInView ? { scale: 1} : { scale: 0 }}
           transition={{ duration: 1.5 }}
         />
 
