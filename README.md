@@ -1,95 +1,70 @@
-# **FitnEarn Landing Page 1**
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## **About the Project**
+## Available Scripts
 
-This is the frontend built using the **MERN stack**  **React + Tailwind CSS + Aceternity UI** for the frontend. 
+In the project directory, you can run:
 
----
+### `npm start`
 
-## **Features**
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- 🌟 **Responsive Design**: Built with Tailwind CSS for a seamless user experience across all devices.
-- 🚀 **Reusable Components**: Aceternity UI provides a collection of prebuilt and customizable components.
-- 💾 **Full-Stack Functionality**: MERN stack for handling the frontendlogic.
-- 📦 **Scalable Architecture**: Designed with modularity and maintainability in mind.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
----
+### `npm test`
 
-## **Tech Stack**
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### **Frontend**
-- **React.js**: For building reusable components and a dynamic user interface.
-- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
-- **Aceternity UI**: UI library for prebuilt components and design consistency.
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
----
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## **Getting Started**
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-To get a local copy up and running, follow these steps:
+### `npm run eject`
 
-### **Prerequisites**
-Make sure you have the following installed:
-- **Node.js** (v16+)
-- **npm** (or yarn)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
----
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### **Installation**
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/AnujKumarSingh-Code/FitnEarn-Landing-Page.git
-   cd YourRepository
-   ```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-2. **Install Dependencies**
+## Learn More
 
-   **Frontend**:
-   ```bash
-   cd FitnEarn-Landing-Page
-   npm install
-   ```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-  
+To learn React, check out the [React documentation](https://reactjs.org/).
 
----
+### Code Splitting
 
-### **Running the App**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-1. **Start the Frontend Server**
-   ```bash
-   npm start
-   ```
+### Analyzing the Bundle Size
 
-2. Open your browser and visit `http://localhost:3000`.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
----
+### Making a Progressive Web App
 
-## **Folder Structure**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-```
-Project/
-├── frontend/
-│   ├── src/
-│   │   ├── components/    # Reusable UI components
-│   │   ├── ui/            # Aceternity UI components for animation
-│   │   ├── assets/        # Static assets (images, fonts, etc.)
-│   │   ├── utils/         # Utility functions
-│   │   └── App.js         # Main React app entry point
-│   └── public/            # Public files
-├── 
-└── README.md
-```
+### Advanced Configuration
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## **Screenshots**
+### Deployment
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
+### `npm run build` fails to minify
 
----
-
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
