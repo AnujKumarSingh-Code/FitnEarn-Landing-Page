@@ -48,7 +48,7 @@ export default function Table() {
     ];
 
     return (
-        <div className="flex items-center justify-center bg-gradient bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-700 py-10">
+        <div className="flex items-center justify-center bg-zinc-900 py-10">
             <HoverEffect items={projects} />
         </div>
     );

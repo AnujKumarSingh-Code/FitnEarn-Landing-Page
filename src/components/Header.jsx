@@ -1,57 +1,97 @@
+'use client';
 import React from "react";
-import mobile from "../assests/iphone.png";
-import smile from "../assests/smile.png";
-import { FaApple, FaGooglePlay, FaSmileWink } from "react-icons/fa";
-import circle from "../assests/circle.png"
-import heart from "../assests/heart.png"
-import heartIcon from "../assests/heartIcon.png"
-import man from "../assests/man.png"
-import walk from "../assests/walk.png"
-import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
+import mobile from "../assets/iphone.png";
+import smile from "../assets/smile.png";
+import { FaApple, FaGooglePlay } from "react-icons/fa";
+import circle from "../assets/circle.png";
+import heart from "../assets/heart.png";
+import heartIcon from "../assets/heartIcon.png";
+import man from "../assets/man.png";
+import walk from "../assets/walk.png";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-
-
-const Header = () => {
-  const words = [
-
-    {
-      text: "Hey, Awesome Coach",
-      className: "text-5xl font-bold mb-4 italic",
-    },
-  ]
+const TypewriterEffectSmooth = ({ words, className, cursorClassName }) => {
+  const wordsArray = words.map((word) => {
+    return {
+      ...word,
+      text: word.text.split(""),
+    };
+  });
+  const renderWords = () => {
+    return (
+      <div>
+        {wordsArray.map((word, idx) => (
+          <div key={`word-${idx}`} className="inline-block">
+            {word.text.map((char, index) => (
+              <span
+                key={`char-${index}`}
+                className={`dark:text-neutral-100 font-lato text-neutral-900 ${word.className}`}
+              >
+                {char}
+              </span>
+            ))}
+          </div>
+        ))}
+      </div>
+    );
+  };
 
   return (
-    <header className="text-center bg-gradient bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-700 text-white py-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-80">
-        <div>
+    <div className={`flex space-x-1 my-6 ${className}`}>
+      <motion.div
+        className="overflow-hidden pb-2"
+        initial={{ width: "0%" }}
+        whileInView={{ width: "fit-content" }}
+        transition={{ duration: 2, ease: "linear", delay: 0.5 }}
+      >
+        <div
+          className="text-5xl font-bold italic"
+          style={{ whiteSpace: "nowrap" }}
+        >
+          {renderWords()} {" "}
+        </div>{" "}
+      </motion.div>
+      <motion.span
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, repeat: Infinity, repeatType: "reverse" }}
+        className={`block rounded-sm w-[4px] h-16 bg-blue-500 ${cursorClassName}`}
+      ></motion.span>
+    </div>
+  );
+};
 
-          <div className="inline-flex items-center gap-3 mt-40 ml-9">
-            <img src={smile} alt="Smile Icon" />
-            <TypewriterEffectSmooth words={words} />
+const Header = () => {
+  return (
+    <header className="text-center bg-neutral-900 text-neutral-100 py-10 font-lato">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[400]">
+        <div className="w-[750px]">
+          <div className="inline-flex ml-[-90] items-left gap-3 mt-40">
+            <Image src={smile} alt="Smile Icon " className=" justify-end h-[60px] w-[60px] mt-6" />
+            <TypewriterEffectSmooth
+              words={[{ text: "Hey, Awesome Coach", className: "" }]}
+            />
           </div>
 
-          <div className="mt-10 align-baseline text-left ml-40">
-            <p className="text-4xl font-semibold inline-flex items-end">
+          <div className="mt-10  ml-[72px] align-baseline text-left">
+            <p className="text-3xl font-semibold inline-flex">
               Expand Your Reach, Inspire More
             </p>
-            <p className="text-4xl font-semibold">
+            <p className="text-3xl font-semibold">
               Lives{" "}
-              <span className="text-gradient bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 text-transparent bg-clip-text">
+              <span className="text-gradient bg-linear-primary-500 text-transparent bg-clip-text">
                 Join FitnEarnPal Today!
               </span>
             </p>
           </div>
 
-          <div className="text-2xl text-left ml-40 mt-10">
-            <p>
-              A global platform for coaches to connect, inspire, and
-              change lives.
-            </p>
+          <div className="text-2xl  ml-[72px] text-left mt-10">
+            <p>A global platform for coaches to connect, inspire, and change lives.</p>
           </div>
 
-          <div className="ml-40 mt-10 grid grid-cols-2">
-
-            <button className="flex items-center w-52 px-5 py-2 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-lg shadow-lg hover:opacity-90">
+          <div className="ml-[72px] mt-10 grid grid-cols-2">
+            <button className="flex items-center w-52 px-5 py-2 bg-linear-primary-500 text-white rounded-lg shadow-lg hover:opacity-90">
               <FaApple className="w-10 h-10 mr-2" />
               <div className="text-left">
                 <p className="text-xs">Download on the</p>
@@ -59,8 +99,7 @@ const Header = () => {
               </div>
             </button>
 
-
-            <button className="flex items-center w-52 px-5 py-2 w-30 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-lg shadow-lg hover:opacity-90">
+            <button className="flex items-center ml-[-70] w-52 px-5 py-2 bg-linear-primary-500 text-white rounded-lg shadow-lg hover:opacity-90">
               <FaGooglePlay className="w-10 h-10 mr-3" />
               <div className="text-left">
                 <p className="text-xs">Get it on</p>
@@ -70,41 +109,32 @@ const Header = () => {
           </div>
         </div>
 
-
         <div className="mt-40">
           <div className="relative w-90 h-90 mr-20">
-            <img src={circle} alt="circle" className="w-90 h-90 " />
-            <img
+            <Image src={circle} alt="circle" className="w-90 h-90 " />
+            <Image
               src={mobile}
               alt="mobile"
-              className="absolute top-1/2 left-72 transform -translate-x-1/2 -translate-y-1/2 w-70 h-70 "
+              className="absolute top-1/2 left-72 transform -translate-x-1/2 -translate-y-1/2 w-70 h-70"
             />
-            <div className="absolute top-1 left-1/5">
-              <img
-                src={heart}
-                alt="heart"
-                className="w-28 h-28  p-2 rounded-full shadow-md hover:scale-125"
-              />
+            <div className="absolute top-[-70] right-[350]">
+              <Image src={heart} alt="heart" className="w-28 h-28 p-2" />
             </div>
-            <div className="absolute top-1 left-96">
-              <img
+            <div className="absolute top-[-20] right-[40]">
+              <Image src={man} alt="man" className="w-28 h-28 p-2 rounded-full" />
+            </div>
+            <div className="absolute bottom-36 right-[350]">
+              <Image
                 src={heartIcon}
                 alt="heartIcon"
-                className="w-28 h-28 p-2 rounded-full shadow-md  hover:scale-125"
+                className="w-28 h-28 p-2 rounded-full"
               />
             </div>
-            <div className="absolute bottom-1/4 left-1/5">
-              <img
+            <div className="absolute bottom-10 right-[40]">
+              <Image
                 src={walk}
                 alt="walk"
-                className="w-28 h-28  p-2 rounded-full shadow-md  hover:scale-125"
-              />
-            </div>
-            <div className="absolute bottom-1/4 left-96">
-              <img
-                src={man}
-                alt="man"
-                className="w-28 h-28  p-2 rounded-full shadow-md  hover:scale-125"
+                className="w-28 h-28 p-2 rounded-full"
               />
             </div>
           </div>
