@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import ip2 from '../assets/ip2.png';
-import ip4 from '../assets/ip4.png';
+import ip3 from '../assets/ip3.png';
 import Image from 'next/image';
 
 const HeroSection = () => {
@@ -13,8 +13,8 @@ const HeroSection = () => {
 
       <div className="relative flex items-center justify- mt-12 h-screen">
         <Image
-          src={ip4}
-          alt="ip4"
+          src={ip3}
+          alt="ip3"
           className="absolute animate-move-up-down transform rotate-[-8deg] left-[350px] rounded-lg"
         />
 

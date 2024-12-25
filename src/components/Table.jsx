@@ -1,10 +1,10 @@
 import React from "react";
-import yoga from "../assests/yoga.png";
-import medi from "../assests/medi.png";
-import girl from "../assests/girl.png";
-import phy from "../assests/phy.png";
-import rehab from "../assests/rehab.png";
-import doctor from "../assests/doctor.png";
+import yoga from "../assets/yoga.png";
+import medi from "../assets/medi.png";
+import girl from "../assets/girl.png";
+import phy from "../assets/phy.png";
+import rehab from "../assets/rehab.png";
+import doctor from "../assets/doctor.png";
 import { HoverEffect } from "../ui/card-hover-effect";
 
 export default function Table() {

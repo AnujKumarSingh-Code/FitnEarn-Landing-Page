@@ -1,4 +1,4 @@
-'use client';
+
 import React from "react";
 import mobile from "../assets/iphone.png";
 import smile from "../assets/smile.png";

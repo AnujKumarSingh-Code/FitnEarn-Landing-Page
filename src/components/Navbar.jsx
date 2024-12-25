@@ -1,4 +1,4 @@
-'use client'
+
 import React, { useState, useEffect } from "react";
 import fit from "../assets/fit.png";
 import Image from "next/image";
